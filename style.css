@@ -1,0 +1,63 @@
+body {
+	font-family: sans-serif;
+	/* background changes the background color */
+  background: aliceblue;
+	/* color refers to the font color */
+  color: steelblue;
+}
+
+p {
+  color: snow;
+}
+
+.section-center { 
+/* . signifies any class name */
+  width: 70%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.title {
+  margin: 40px;
+  text-align: center;
+}
+
+.question {
+  background: steelblue;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.question-title {
+  line-height: 1.5;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: snow;
+}
+
+.question-text {
+  border-top: 1px solid snow;
+  padding-bottom: 8px;
+  line-height: 1.6;
+	display: none;
+}
+
+/* References the two different classes*/
+/* show text and rotate button */
+.show-text .question-text {
+	display: block;
+}
+
+.show-text .question-btn {
+	transform: rotate(180deg);
+}
